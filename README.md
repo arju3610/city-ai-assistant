@@ -104,6 +104,15 @@ streamlit run app.py
 
 Streamlit will provide a local URL to open in your browser.
 
+## Deploy on Render
+
+1. Push this project to a GitHub repository.
+2. In Render, choose **New** > **Blueprint** and connect that repository. Render will read `render.yaml` and create the web service.
+3. Enter values for `GROQ_API_KEY`, `OPENWEATHER_API_KEY`, and `TAVILY_API_KEY` when Render prompts for the environment variables. Keep these values private; do not add them to `render.yaml` or commit them.
+4. Start the deployment. Render installs `requirements.txt` and starts Streamlit on the host and port provided by Render.
+
+After deployment, open the service URL shown in the Render dashboard. Free web services may take a little time to wake up after inactivity.
+
 ## Example Queries
 
 - What is the weather in Ludhiana?
