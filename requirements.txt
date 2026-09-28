@@ -1,0 +1,10 @@
+langchain
+langchain-core
+python-dotenv
+langchain-groq
+langchain-community
+langchain-groq
+tavily
+streamlit
+requests
+rich
